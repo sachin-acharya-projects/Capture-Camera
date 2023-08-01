@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 1, 14);
+}
+
+.wrapper video {
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    bottom: 50px;
+    z-index: 10000;
+    
+    width: fit-content;
+    padding: 15px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    gap: 15px;
+    border-radius: 60px;
+
+    box-shadow: 0 0 20px #000;
+}
+
+.controls button {
+    width: fit-content;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all linear;
+    padding: 10px;
+}
+
+.controls button i {
+    font-size: 35px;
+}
+
+.controls button:hover {
+    background: deepskyblue;
+}
+
+.controls button:active {
+    background: dodgerblue;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}

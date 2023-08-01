@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Vite App</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <video autoplay="true"></video>
+        <div class="controls">
+            <button id="capture">
+                <i class="material-icons">camera</i>
+            </button>
+            <button id="view-image">
+                <i class="material-symbols-outlined">
+                    gallery_thumbnail
+                </i>
+            </button>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <canvas id="canvas" hidden></canvas>
+    </div>
+    <script type="module" src="./statics/js/main.js"></script>
+</body>
+
+</html>
